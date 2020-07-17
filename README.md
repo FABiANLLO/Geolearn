@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# geolearn
+# Golearn
 
 A new Flutter application.
 
@@ -17,4 +16,3 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 =======
 # Geolearn
->>>>>>> 45d1a854a222b961be0e4c5fdf9a9ae75cdacfa8
