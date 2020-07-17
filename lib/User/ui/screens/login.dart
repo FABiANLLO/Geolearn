@@ -14,7 +14,7 @@ class Login extends StatelessWidget {
         children: <Widget>[
           BodyLogin(),
           CardLogin(),
-          ButtonStart(),
+          // ButtonStart(),
           BannerLogin("assets/img/logo.png")
         ],
       ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ButtonStart extends StatefulWidget {
+  final VoidCallback onPressed;
+  ButtonStart({Key key, @required this.onPressed});
   @override
   _ButtonStartState createState() => _ButtonStartState();
 }
@@ -20,10 +22,7 @@ class _ButtonStartState extends State<ButtonStart> {
           mini: false,
           tooltip: "Fav",
           onPressed: () {
-            // Navigator.push(
-            //     // context,
-            //     // MaterialPageRoute(builder: (context) => FavoritePlaces()),
-            //     );
+
           },
           child: Icon(
             Icons.play_arrow,

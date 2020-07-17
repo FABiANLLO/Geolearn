@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1075666710403",
+    "firebase_url": "https://geolearn-4f49d.firebaseio.com",
+    "project_id": "geolearn-4f49d",
+    "storage_bucket": "geolearn-4f49d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075666710403:android:9450c3a2dbbc316bba90b6",
+        "android_client_info": {
+          "package_name": "com.example.geolearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075666710403-im1u95p69iiqp5jt1h2pu6jusj4fghjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geolearn",
+            "certificate_hash": "abecbca256ab4aa3cfead12dbdebb7c197e15d78"
+          }
+        },
+        {
+          "client_id": "1075666710403-ufvd91k7au44ln309i7b087voe6nqkjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi_OgfShEaE_qSTADQqu6hrnsPmCwSCR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075666710403-ufvd91k7au44ln309i7b087voe6nqkjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
