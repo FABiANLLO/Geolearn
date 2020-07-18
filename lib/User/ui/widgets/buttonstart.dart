@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ButtonStart extends StatefulWidget {
   final VoidCallback onPressed;
-  ButtonStart({Key key, @required this.onPressed});
+  ButtonStart(@required this.onPressed);
   @override
   _ButtonStartState createState() => _ButtonStartState();
 }
@@ -21,9 +21,7 @@ class _ButtonStartState extends State<ButtonStart> {
           backgroundColor: Color(0xFF11DA53),
           mini: false,
           tooltip: "Fav",
-          onPressed: () {
-
-          },
+          onPressed: widget.onPressed,
           child: Icon(
             Icons.play_arrow,
             size: 40.0,

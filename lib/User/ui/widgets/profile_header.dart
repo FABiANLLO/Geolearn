@@ -17,11 +17,9 @@ class ProfileHeader extends StatelessWidget {
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         switch (snapshot.connectionState) {
           case ConnectionState.waiting:
-            return CircularProgressIndicator();
           case ConnectionState.none:
             return CircularProgressIndicator();
           case ConnectionState.active:
-            return showProfileData(snapshot);
           case ConnectionState.done:
             return showProfileData(snapshot);
         }
@@ -56,7 +54,7 @@ class ProfileHeader extends StatelessWidget {
       user = User(
           name: snapshot.data.displayName,
           email: snapshot.data.email,
-          photoURL: snapshot.data.photoURL);
+          photoURL: snapshot.data.photoUrl);
       return Container(
         margin: EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
         child: Column(
