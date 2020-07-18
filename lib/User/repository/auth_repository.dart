@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:geolearn/User/repository/FirebaseAuth.dart';
+import 'package:geolearn/User/repository/firebase_auth_api.dart';
 
 class AuthRepository {
   final _firebaseAuthAPI = FirebaseAuthAPI();
