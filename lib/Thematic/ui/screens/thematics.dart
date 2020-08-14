@@ -9,8 +9,8 @@ class Thematics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String description =
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ";
-    String namethematic = "Lorem Ipsum";
+        "Es el subcontinente austral de América, o también considerado por muchos, uno de los continentes que conforman el supercontinente de Las Américas. Está atravesada por la línea ecuatorial en su extremo norte, quedando así con la mayor parte de su territorio comprendida dentro del hemisferio sur.";
+    String namethematic = "Sudamerica";
 
     return Stack(
       children: <Widget>[

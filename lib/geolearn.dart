@@ -9,7 +9,7 @@ class Geoleran extends StatefulWidget {
 }
 
 class _GeoleranState extends State<Geoleran> {
-  int indexTap = 0;
+  int indexTap = 0; 
 
   final List<Widget> widgetsChildren = [
     DisplayView(0),

@@ -6,7 +6,7 @@ class HeaderThematic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: <Widget>[AppbarGradient("Thematics"), CardImageList()],
+      children: <Widget>[AppbarGradient("Continentes"), CardImageList()],
     );
   }
 }
