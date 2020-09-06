@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CardLogin extends StatelessWidget {
+class BackgroundContent extends StatelessWidget {
+  double top;
+
+  BackgroundContent(@required this.top);
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 220.0,
+      top: top,
       child: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -18,7 +21,7 @@ class CardLogin extends StatelessWidget {
             boxShadow: <BoxShadow>[
               BoxShadow(
                   color: Colors.black38,
-                  blurRadius: 25.0,
+                  blurRadius: 35.0,
                   offset: Offset(0.0, 17.0))
             ]),
       ),

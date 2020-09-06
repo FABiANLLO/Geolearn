@@ -22,7 +22,7 @@ class _ButtonStartState extends State<ButtonStart> {
             heroTag: "bn1",
             backgroundColor: Color(0xFF11DA53),
             mini: false,
-            tooltip: "Fav",
+            tooltip: "Inicio de Sesión",
             onPressed: widget.onPressed,
             child: Icon(
               Icons.play_arrow,

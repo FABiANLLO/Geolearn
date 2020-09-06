@@ -3,7 +3,7 @@ import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:geolearn/User/bloc/bloc_user.dart';
 import 'package:geolearn/User/ui/screens/account.dart';
 import 'package:geolearn/User/ui/screens/play.dart';
-import 'package:geolearn/Thematic/ui/screens/thematics.dart';
+import 'package:geolearn/User/ui/screens/thematics.dart';
 
 class DisplayView extends StatelessWidget {
   final int count;

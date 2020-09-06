@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geolearn/User/ui/widgets/body_login.dart';
 import 'package:geolearn/User/ui/widgets/banner_login.dart';
-import 'package:geolearn/User/ui/widgets/card_login.dart';
+import 'package:geolearn/User/ui/widgets/background_content.dart';
 import 'package:geolearn/User/ui/widgets/buttonstart.dart';
 
 class Login extends StatelessWidget {
