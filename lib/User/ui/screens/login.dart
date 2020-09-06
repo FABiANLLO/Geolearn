@@ -11,12 +11,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: <Widget>[
-          BodyLogin(),
-          CardLogin(),
-          // ButtonStart(),
-          BannerLogin("assets/img/logo.png")
-        ],
+        children: <Widget>[BodyLogin(), BannerLogin("assets/img/logo.png")],
       ),
     );
   }

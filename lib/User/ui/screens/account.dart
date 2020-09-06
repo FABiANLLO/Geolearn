@@ -9,7 +9,7 @@ class Account extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        AppbarGradient('Account'),
+        AppbarGradient('Cuenta'),
         ListView(
           children: <Widget>[ProfileHeader()],
         )
