@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:geolearn/User/model/user.dart';
 import 'package:geolearn/User/ui/screens/login.dart';
 import 'package:geolearn/User/ui/widgets/buttonstart.dart';
 import 'package:geolearn/User/bloc/bloc_user.dart';
@@ -39,9 +40,15 @@ class _SignInState extends State<SignIn> {
       Login(),
       ButtonStart(() => {
             userBloc.signOut(),
-            userBloc.SignIn().then((FirebaseUser user) =>
-                print("El usuario es ${user.displayName}"))
-          }),
+            userBloc.SignIn().then((FirebaseUser user) {
+              userBloc.updateUserData(User(
+                uid: user.uid,
+                name: user.displayName,
+                email: user.email,
+                photoURL: user.photoUrl,
+              ));
+            }),
+          })
     ]));
   }
 }

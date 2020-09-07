@@ -1,5 +1,7 @@
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:geolearn/User/model/user.dart';
 import 'package:geolearn/User/repository/auth_repository.dart';
+import 'package:geolearn/User/repository/cloud_firestore_repository.dart';
 import 'package:geolearn/User/ui/screens/sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -14,12 +16,15 @@ class UserBloc implements Bloc {
     return _auth_repository.signInFirebase();
   }
 
-  signOut(){
+  //Registro de Usuario
+  final _cloudFirestoreRepository = CloudFirestoreRepository();
+  void updateUserData(User user) =>
+      _cloudFirestoreRepository.updateUserDataFirestore(user);
+
+  signOut() {
     _auth_repository.signOut();
   }
 
   @override
-  void dispose() {
-    // TODO: implement dispose
-  }
+  void dispose() {}
 }
