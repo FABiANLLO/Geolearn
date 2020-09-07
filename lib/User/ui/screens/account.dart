@@ -14,7 +14,7 @@ class Account extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          AppbarGradient('Cuenta'),
+          AppbarGradient(height: 300.0, title: 'Cuenta'),
           BackgroundContent(270),
           ListView(
             children: [ProfileHeader()],

@@ -47,25 +47,25 @@ class _ExploreState extends State<Explore> {
             image: DecorationImage(
                 fit: BoxFit.cover, image: AssetImage(widget.urlPhoto))));
 
-    final content = Container(
-      // alignment: Alignment.center,
-      width: 350.0,
-      height: 100.0,
-      margin: EdgeInsets.only(bottom: 20.0),
-      decoration: BoxDecoration(
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-                color: Colors.black38,
-                blurRadius: 10.0,
-                offset: Offset(0.0, 5.0))
-          ],
-          shape: BoxShape.rectangle,
-          color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(10.0))),
-      child: Row(
-        // crossAxisAlignment: CrossAxisAlignment.center,
-        // mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[thematicPhoto, userDetails],
+    final content = InkWell(
+      child: Container(
+        // alignment: Alignment.center,
+        width: 350.0,
+        height: 100.0,
+        margin: EdgeInsets.only(bottom: 20.0),
+        decoration: BoxDecoration(
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 10.0,
+                  offset: Offset(0.0, 5.0))
+            ],
+            shape: BoxShape.rectangle,
+            color: Colors.white,
+            borderRadius: BorderRadius.all(Radius.circular(10.0))),
+        child: Row(
+          children: <Widget>[thematicPhoto, userDetails],
+        ),
       ),
     );
     return Stack(

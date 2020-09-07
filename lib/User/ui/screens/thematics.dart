@@ -15,7 +15,10 @@ class _ThematicsState extends State<Thematics> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [AppbarGradient('Explora'), BackgroundContent(130.0)],
+        children: [
+          AppbarGradient(height: 300.0, title: 'Explora'),
+          BackgroundContent(130.0)
+        ],
       ),
     );
   }
