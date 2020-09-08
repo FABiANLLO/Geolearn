@@ -44,7 +44,7 @@ class AppbarGradient extends StatelessWidget {
                 fontFamily: "Lato",
                 fontWeight: FontWeight.bold),
           ),
-          alignment: Alignment(-1.22, -0.75),
+          alignment: Alignment(-1.15, -0.74),
         ),
       ),
       //alignment: Alignment(-0.9, -0.6),

@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:geolearn/User/bloc/bloc_user.dart';
+import 'package:geolearn/User/ui/screens/thematic_screen.dart';
 import 'package:geolearn/Thematic/ui/widgets/explore.dart';
 
 class BackgroundContentExplore extends StatelessWidget {
   double top;
-
+  UserBloc userBloc;
   BackgroundContentExplore(@required this.top);
   @override
   Widget build(BuildContext context) {
+    userBloc = BlocProvider.of<UserBloc>(context);
     return Positioned(
       top: top,
       child: Container(
@@ -34,9 +38,10 @@ class BackgroundContentExplore extends StatelessWidget {
               description: 'Información de Países del mundo',
               urlPhoto: 'assets/img/country.png',
               onPressed: () {
-                Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Navegando Paises"),
-                ));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => ThemathicScreen()));
               },
             ),
             Explore(

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:geolearn/display_view.dart';
+
+import 'User/bloc/bloc_user.dart';
 
 class Geoleran extends StatefulWidget {
   Geoleran({Key key}) : super(key: key);
@@ -9,7 +12,7 @@ class Geoleran extends StatefulWidget {
 }
 
 class _GeoleranState extends State<Geoleran> {
-  int indexTap = 0; 
+  int indexTap = 0;
 
   final List<Widget> widgetsChildren = [
     DisplayView(0),
@@ -23,8 +26,10 @@ class _GeoleranState extends State<Geoleran> {
     });
   }
 
+  UserBloc userBloc;
   @override
   Widget build(BuildContext context) {
+    userBloc = BlocProvider.of<UserBloc>(context);
     return Scaffold(
       body: widgetsChildren[indexTap],
       bottomNavigationBar: Theme(

@@ -6,6 +6,8 @@ import 'package:geolearn/User/ui/screens/account.dart';
 import 'package:geolearn/User/ui/screens/play_screen.dart';
 import 'package:geolearn/User/ui/screens/thematics.dart';
 
+import 'Thematic/ui/screens/thematic_screen.dart';
+
 class DisplayView extends StatelessWidget {
   final int count;
   DisplayView(@required this.count);
