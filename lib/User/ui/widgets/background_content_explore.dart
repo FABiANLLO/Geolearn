@@ -25,14 +25,14 @@ class BackgroundContentExplore extends StatelessWidget {
                   blurRadius: 35.0,
                   offset: Offset(0.0, 17.0))
             ]),
-        padding: EdgeInsets.only(top: 70.0),
+        padding: EdgeInsets.only(top: 100.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Explore(
-              name: 'Paises',
-              description: 'Test de preguntas',
-              urlPhoto: 'assets/img/1.jpg',
+              name: 'Países',
+              description: 'Información de Países del mundo',
+              urlPhoto: 'assets/img/country.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Paises"),
@@ -41,8 +41,8 @@ class BackgroundContentExplore extends StatelessWidget {
             ),
             Explore(
               name: 'Banderas',
-              description: 'Test de preguntas',
-              urlPhoto: 'assets/img/2.jpg',
+              description: 'Información de Banderas del mundo',
+              urlPhoto: 'assets/img/bandera.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Banderas"),
@@ -51,8 +51,8 @@ class BackgroundContentExplore extends StatelessWidget {
             ),
             Explore(
               name: 'Continentes',
-              description: 'Test de preguntas',
-              urlPhoto: 'assets/img/3.jpg',
+              description: 'Información de Continentes del mundo',
+              urlPhoto: 'assets/img/continents.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Continentes"),

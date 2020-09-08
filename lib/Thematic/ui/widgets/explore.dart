@@ -77,7 +77,7 @@ class _ExploreState extends State<Explore> {
       onTap: widget.onPressed,
       child: Container(
         margin: EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
-        width: 350.0,
+        width: 380.0,
         height: 100.0,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),

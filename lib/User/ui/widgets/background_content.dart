@@ -32,7 +32,7 @@ class BackgroundContent extends StatelessWidget {
             Explore(
               name: 'Juega Paises',
               description: 'Test de preguntas',
-              urlPhoto: 'assets/img/1.jpg',
+              urlPhoto: 'assets/img/country.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Paises"),
@@ -42,7 +42,7 @@ class BackgroundContent extends StatelessWidget {
             Explore(
               name: 'Juega Banderas',
               description: 'Test de preguntas',
-              urlPhoto: 'assets/img/2.jpg',
+              urlPhoto: 'assets/img/bandera.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Banderas"),
@@ -52,7 +52,7 @@ class BackgroundContent extends StatelessWidget {
             Explore(
               name: 'Juega Continentes',
               description: 'Test de preguntas',
-              urlPhoto: 'assets/img/3.jpg',
+              urlPhoto: 'assets/img/continents.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Continentes"),
@@ -62,7 +62,7 @@ class BackgroundContent extends StatelessWidget {
             Explore(
               name: 'Realidad Aumentada',
               description: 'Conoce las Maravillas',
-              urlPhoto: 'assets/img/4.jpg',
+              urlPhoto: 'assets/img/ar.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Realidad Aumentada"),

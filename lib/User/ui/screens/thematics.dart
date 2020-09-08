@@ -19,7 +19,7 @@ class _ThematicsState extends State<Thematics> {
         children: [
           AppbarGradient(height: 300.0, title: 'Explora'),
           Stack(
-            children: [BackgroundContentExplore(200.0)],
+            children: [BackgroundContentExplore(250.0)],
           )
         ],
       ),
