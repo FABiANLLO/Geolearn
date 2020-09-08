@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:geolearn/Thematic/ui/widgets/explore.dart';
 
-class BackgroundContent extends StatelessWidget {
+class BackgroundContentExplore extends StatelessWidget {
   double top;
 
-  BackgroundContent(@required this.top);
+  BackgroundContentExplore(@required this.top);
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -30,7 +30,7 @@ class BackgroundContent extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Explore(
-              name: 'Juega Paises',
+              name: 'Paises',
               description: 'Test de preguntas',
               urlPhoto: 'assets/img/1.jpg',
               onPressed: () {
@@ -40,7 +40,7 @@ class BackgroundContent extends StatelessWidget {
               },
             ),
             Explore(
-              name: 'Juega Banderas',
+              name: 'Banderas',
               description: 'Test de preguntas',
               urlPhoto: 'assets/img/2.jpg',
               onPressed: () {
@@ -50,22 +50,12 @@ class BackgroundContent extends StatelessWidget {
               },
             ),
             Explore(
-              name: 'Juega Continentes',
+              name: 'Continentes',
               description: 'Test de preguntas',
               urlPhoto: 'assets/img/3.jpg',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text("Navegando Continentes"),
-                ));
-              },
-            ),
-            Explore(
-              name: 'Realidad Aumentada',
-              description: 'Conoce las Maravillas',
-              urlPhoto: 'assets/img/4.jpg',
-              onPressed: () {
-                Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Realidad Aumentada"),
                 ));
               },
             ),

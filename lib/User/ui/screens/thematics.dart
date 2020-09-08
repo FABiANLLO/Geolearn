@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geolearn/User/ui/widgets/background_content.dart';
+import 'package:geolearn/User/ui/widgets/background_content_explore.dart';
 
 import '../../../widgets/appbar_gradient.dart';
 
@@ -17,7 +18,9 @@ class _ThematicsState extends State<Thematics> {
       body: Stack(
         children: [
           AppbarGradient(height: 300.0, title: 'Explora'),
-          BackgroundContent(130.0)
+          Stack(
+            children: [BackgroundContentExplore(200.0)],
+          )
         ],
       ),
     );

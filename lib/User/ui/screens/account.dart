@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geolearn/User/ui/widgets/background_content.dart';
+import 'package:geolearn/User/ui/widgets/background_content_cuenta.dart';
 import 'package:geolearn/widgets/appbar_gradient.dart';
 import 'package:geolearn/User/ui/widgets/profile_header.dart';
 
@@ -15,7 +16,7 @@ class Account extends StatelessWidget {
       body: Stack(
         children: [
           AppbarGradient(height: 300.0, title: 'Cuenta'),
-          BackgroundContent(270),
+          BackgroundContentAcount(270),
           ListView(
             children: [ProfileHeader()],
           )

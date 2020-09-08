@@ -14,10 +14,10 @@ class Play extends StatelessWidget {
       body: Stack(
         children: [
           AppbarGradient(height: 300.0, title: 'Juega'),
-          BackgroundContent(130.0),
           ListView(
             children: [
-              Explore('Países', 'Paises de America', "assets/img/2.jpg"),
+              BackgroundContent(130.0),
+              // Explore('Países', 'Paises de America', "assets/img/2.jpg"),
             ],
           ),
         ],
