@@ -47,6 +47,8 @@ class _SignInState extends State<SignIn> {
                 email: user.email,
                 photoURL: user.photoUrl,
               ));
+              // userBloc.fetchRestMovie('238');
+              // userBloc.fetchRestCountry('co');
             }),
           })
     ]));

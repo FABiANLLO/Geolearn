@@ -49,9 +49,8 @@ class BackgroundContentExplore extends StatelessWidget {
               description: 'Información de Banderas del mundo',
               urlPhoto: 'assets/img/bandera.png',
               onPressed: () {
-                Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Navegando Banderas"),
-                ));
+                userBloc.fetchRestCountry("CO");
+                userBloc.addAllCountries();
               },
             ),
             Explore(
