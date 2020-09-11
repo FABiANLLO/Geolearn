@@ -4,27 +4,17 @@ class DescriptionThematic extends StatelessWidget {
   String namethematic;
   int stars;
   String descriptionthemathics;
+  String name2;
+  String descp2;
+  String aspcban;
+  String descpban;
+  String mapCountry;
 
-  DescriptionThematic(
-      this.namethematic, this.stars, this.descriptionthemathics);
+  DescriptionThematic(this.namethematic, this.descriptionthemathics, this.name2,
+      this.descp2, this.aspcban, this.descpban, this.mapCountry);
 
   @override
   Widget build(BuildContext context) {
-    final star_half = Container(
-      margin: EdgeInsets.only(top: 310.0, right: 3.0),
-      child: Icon(Icons.star_half, color: Colors.yellow),
-    );
-
-    final star_border = Container(
-      margin: EdgeInsets.only(top: 310.0, right: 3.0),
-      child: Icon(Icons.star_border, color: Colors.yellow),
-    );
-
-    final star = Container(
-      margin: EdgeInsets.only(top: 310.0, right: 3.0),
-      child: Icon(Icons.star, color: Colors.yellow),
-    );
-
     final description = Container(
       margin: new EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
       child: new Text(
@@ -37,11 +27,11 @@ class DescriptionThematic extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row(
+    final carac = Row(
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 310.0,
+            top: 320.0,
             left: 20.0,
             right: 20.0,
           ),
@@ -49,20 +39,104 @@ class DescriptionThematic extends StatelessWidget {
             namethematic,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 30.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.w900),
             textAlign: TextAlign.left,
           ),
         ),
-        Row(
-            // children: <Widget>[star, star, star, star, star_border],
-            )
+      ],
+    );
+    final aspc = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+            top: 20.0,
+            left: 20.0,
+            right: 20.0,
+          ),
+          child: Text(
+            name2,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 25.0,
+                fontWeight: FontWeight.w900),
+            textAlign: TextAlign.left,
+          ),
+        ),
       ],
     );
 
+    final description2 = Container(
+      margin: new EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+      child: new Text(
+        descp2,
+        style: const TextStyle(
+            fontFamily: "Lato",
+            fontSize: 16.0,
+            fontWeight: FontWeight.normal,
+            color: Color(0xFF56575a)),
+      ),
+    );
+    final aspcban2 = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+            top: 20.0,
+            left: 20.0,
+            right: 20.0,
+          ),
+          child: Text(
+            aspcban,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 25.0,
+                fontWeight: FontWeight.w900),
+            textAlign: TextAlign.left,
+          ),
+        ),
+      ],
+    );
+    final descriptionban = Container(
+      margin: new EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+      child: new Text(
+        descpban,
+        style: const TextStyle(
+            fontFamily: "Lato",
+            fontSize: 16.0,
+            fontWeight: FontWeight.normal,
+            color: Color(0xFF56575a)),
+      ),
+    );
+    final aspcmap = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+            top: 20.0,
+            left: 20.0,
+            right: 20.0,
+          ),
+          child: Text(
+            mapCountry,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 25.0,
+                fontWeight: FontWeight.w900),
+            textAlign: TextAlign.left,
+          ),
+        ),
+      ],
+    );
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[title_stars, description],
+      children: <Widget>[
+        carac,
+        description,
+        aspc,
+        description2,
+        aspcban2,
+        descriptionban,
+        aspcmap
+      ],
     );
   }
 }

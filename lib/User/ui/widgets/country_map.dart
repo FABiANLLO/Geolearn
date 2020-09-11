@@ -44,21 +44,22 @@ class _CountryMapState extends State<CountryMap> {
                 _mapController.setMapStyle(jsonEncode(Constant.mapStyle));
               },
             ),
-            Positioned(
-              top: 10.0,
-              left: 10.0,
-              child: Text(widget.countryName,
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontFamily: 'Lato',
-                      fontSize: 26.0,
-                      shadows: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.black38,
-                            blurRadius: 35.0,
-                            offset: Offset(0.0, 17.0))
-                      ])),
-            )
+            // Positioned(
+            //   top: 10.0,
+            //   left: 10.0,
+            //   child: Text(widget.countryName,
+            //       style: TextStyle(
+            //           color: Colors.black,
+            //           fontFamily: 'Lato',
+            //           fontSize: 26.0,
+            //           fontWeight: FontWeight.bold,
+            //           shadows: <BoxShadow>[
+            //             BoxShadow(
+            //                 color: Colors.black38,
+            //                 blurRadius: 35.0,
+            //                 offset: Offset(0.0, 17.0))
+            //           ])),
+            // )
           ],
         ),
       ),

@@ -16,7 +16,7 @@ class Thematics extends StatelessWidget {
       children: <Widget>[
         ListView(
           children: <Widget>[
-            DescriptionThematic(namethematic, 5, description),
+            // DescriptionThematic(namethematic, 5, description),
             ReviewList()
           ],
         ),

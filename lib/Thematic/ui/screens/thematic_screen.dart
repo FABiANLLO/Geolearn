@@ -21,7 +21,7 @@ class _ThemathicScreenState extends State<ThemathicScreen> {
         children: <Widget>[
           ListView(
             children: <Widget>[
-              DescriptionThematic(namethematic, 5, description),
+              // DescriptionThematic(namethematic, 5, description),
               ReviewList()
             ],
           ),

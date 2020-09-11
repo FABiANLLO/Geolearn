@@ -64,7 +64,7 @@ class _ThemathicListState extends State<ThemathicList> {
                 _buildCountriesList(countries),
                 AppbarGradient(
                   height: 150,
-                  title: 'Paises',
+                  title: 'Países',
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 30.0, left: 1.0),

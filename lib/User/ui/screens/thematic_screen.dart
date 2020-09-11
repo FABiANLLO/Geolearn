@@ -19,15 +19,19 @@ class _ThemathicScreenState extends State<ThemathicScreen> {
   Widget build(BuildContext context) {
     final countrie = ModalRoute.of(context).settings.arguments as Country;
     userBloc = BlocProvider.of<UserBloc>(context);
-    String description =
-        "Es el subcontinente austral de América, o también considerado por muchos, uno de los continentes que conforman el supercontinente de Las Américas. Está atravesada por la línea ecuatorial en su extremo norte, quedando así con la mayor parte de su territorio comprendida dentro del hemisferio sur.";
-    String namethematic = "Sudamerica";
     return Scaffold(
       body: Stack(
         children: <Widget>[
           ListView(
             children: <Widget>[
-              DescriptionThematic(countrie.name, 5, countrie.overview),
+              DescriptionThematic(
+                  'Características',
+                  countrie.overview,
+                  'Te puede interesar',
+                  countrie.overview2,
+                  'Sobre su Bandera',
+                  countrie.overviewBan,
+                  'Ubicación Geográfica '),
               // ReviewList(),
               Padding(
                 padding: EdgeInsets.only(
