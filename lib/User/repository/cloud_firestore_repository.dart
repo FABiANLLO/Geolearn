@@ -15,4 +15,6 @@ class CloudFirestoreRepository {
       _cloudFirestoreAPI.addFirestoreMovie(country);
   Future<List<Country>> addAllCountriesFirestore() =>
       _cloudFirestoreAPI.addAllCountries();
+  Future<void> updateTestApprovedFirestore(String uid) =>
+      _cloudFirestoreAPI.updateTestApproved(uid);
 }

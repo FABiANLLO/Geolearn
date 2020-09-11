@@ -26,9 +26,12 @@ class UserBloc implements Bloc {
       _cloudFirestoreRepository.fetchRestCountryFirestore(countryId);
   Future<void> addFirestoreMovie(Country country) =>
       _cloudFirestoreRepository.addFirestoreMovieFirestore(country);
+
   Future<List<Country>> addAllCountries() =>
       _cloudFirestoreRepository.addAllCountriesFirestore();
 
+  Future<void> updateTestApproved(String uid) =>
+      _cloudFirestoreRepository.updateTestApprovedFirestore(uid);
   signOut() {
     _auth_repository.signOut();
   }

@@ -7,8 +7,13 @@ import 'dart:convert';
 
 class CloudFirestoreAPI {
   final String USERS = 'users';
-
+  final _collectionReference = Firestore.instance.collection('users');
   final Firestore _db = Firestore.instance;
+  Future<void> updateTestApproved(String uid) async {
+    await _collectionReference
+        .document(uid)
+        .updateData({'testApproved': FieldValue.increment(1.0)});
+  }
 
   void updateUserData(User user) async {
     DocumentReference ref = _db.collection(USERS).document(user.uid);
