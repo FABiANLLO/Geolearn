@@ -24,6 +24,12 @@ class Country {
       this.flagPath,
       this.latlng,
       this.cioc,
+      this.img1,
+      this.img2,
+      this.img3,
+      this.img4,
+      this.overviewBan,
+      this.overviewConti,
       this.coor});
 
   String name;
@@ -38,6 +44,12 @@ class Country {
   String flagPath;
   List<double> latlng;
   String cioc;
+  String img1;
+  String img2;
+  String img3;
+  String img4;
+  String overviewBan;
+  String overviewConti;
   GeoPoint coor;
 
   factory Country.fromJson(Map<String, dynamic> json) => Country(
@@ -53,6 +65,12 @@ class Country {
         flagPath: json["flag_path"],
         latlng: List<double>.from(json["latlng"].map((x) => x)),
         cioc: json["cioc"],
+        img1: json["img1"],
+        img2: json["img2"],
+        img3: json["img3"],
+        img4: json["img4"],
+        overviewBan: json["overviewBan"],
+        overviewConti: json["overviewConti"],
         coor: json["lat_lng"],
       );
 
@@ -69,6 +87,12 @@ class Country {
         "flag_path": flagPath,
         "latlng": List<dynamic>.from(latlng.map((x) => x)),
         "cioc": cioc,
+        "img1": img1,
+        "img2": img2,
+        "img3": img3,
+        "img4": img4,
+        "overviewBan": overviewBan,
+        "overviewConti": overviewConti,
         "lat_lng": coor,
       };
 }

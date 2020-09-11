@@ -9,11 +9,9 @@ class ButtonsBar extends StatelessWidget {
   Widget build(BuildContext context) {
     userBloc = BlocProvider.of(context);
     return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
+        padding: EdgeInsets.symmetric(horizontal: 100.0, vertical: 0.0),
         child: Row(
           children: <Widget>[
-            CircleButton(true, Icons.vpn_key, 20.0,
-                Color.fromRGBO(255, 255, 255, 1), () => {}),
             CircleButton(
                 true,
                 Icons.exit_to_app,

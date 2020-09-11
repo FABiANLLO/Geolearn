@@ -55,8 +55,8 @@ class DescriptionThematic extends StatelessWidget {
           ),
         ),
         Row(
-          children: <Widget>[star, star, star, star, star_border],
-        )
+            // children: <Widget>[star, star, star, star, star_border],
+            )
       ],
     );
 

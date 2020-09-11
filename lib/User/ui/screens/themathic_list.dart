@@ -27,7 +27,7 @@ class _ThemathicListState extends State<ThemathicList> {
         final country = countries[index];
         return ListTile(
           leading: ClipRRect(
-            borderRadius: BorderRadius.circular(2.0),
+            borderRadius: BorderRadius.circular(10.0),
             child: Image.network(
               Constant.imagePrefix + country.flagPath,
               fit: BoxFit.cover,
@@ -44,7 +44,7 @@ class _ThemathicListState extends State<ThemathicList> {
       },
       separatorBuilder: (BuildContext ctx, int index) => Divider(
         color: Colors.black,
-        height: 0.1,
+        height: 1.0,
       ),
       itemCount: countries.length,
       padding: EdgeInsets.only(top: 150.0),
@@ -56,14 +56,6 @@ class _ThemathicListState extends State<ThemathicList> {
 
     // userBloc = BlocProvider.of<List<Cou>(context);
     return Scaffold(
-      // key: _scaffoldKey,
-      // appBar: AppBar(
-      //   title: Text('Paises'),
-      //   // actions: <Widget>[
-      //   //   IconButton(
-      //   //       icon: Icon(Icons.add_photo_alternate), onPressed: _addMovie)
-      //   // ],
-      // ),
       body: countries == null
           ? Center(child: CircularProgressIndicator())
           // : _buildCountriesList(countries),

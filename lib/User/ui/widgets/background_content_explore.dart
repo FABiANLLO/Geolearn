@@ -50,8 +50,11 @@ class BackgroundContentExplore extends StatelessWidget {
               description: 'Información de Banderas del mundo',
               urlPhoto: 'assets/img/bandera.png',
               onPressed: () {
-                userBloc.fetchRestCountry("CO");
-                userBloc.addAllCountries();
+                // userBloc.fetchRestCountry("CO");
+                // userBloc.addAllCountries();
+                Scaffold.of(context).showSnackBar(SnackBar(
+                  content: Text("No Disponible en tu Suscripción"),
+                ));
               },
             ),
             Explore(
@@ -60,7 +63,7 @@ class BackgroundContentExplore extends StatelessWidget {
               urlPhoto: 'assets/img/continents.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Navegando Continentes"),
+                  content: Text("No Disponible en tu Suscripción"),
                 ));
               },
             ),

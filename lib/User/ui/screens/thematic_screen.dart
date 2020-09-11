@@ -28,14 +28,18 @@ class _ThemathicScreenState extends State<ThemathicScreen> {
           ListView(
             children: <Widget>[
               DescriptionThematic(countrie.name, 5, countrie.overview),
-              ReviewList(),
-              SizedBox(
-                width: double.infinity,
-                height: 300.0,
-                child: CountryMap(
-                    latitude: countrie.coor.latitude,
-                    longitude: countrie.coor.longitude,
-                    countryName: countrie.name),
+              // ReviewList(),
+              Padding(
+                padding: EdgeInsets.only(
+                    top: 20.0, left: 20.0, right: 20.0, bottom: 20.0),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: 300.0,
+                  child: CountryMap(
+                      latitude: countrie.coor.latitude,
+                      longitude: countrie.coor.longitude,
+                      countryName: countrie.name),
+                ),
               )
               // ReviewList(),
             ],

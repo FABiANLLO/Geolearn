@@ -45,7 +45,7 @@ class BackgroundContent extends StatelessWidget {
               urlPhoto: 'assets/img/bandera.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Navegando Banderas"),
+                  content: Text("No Disponible en tu Suscripción"),
                 ));
               },
             ),
@@ -55,7 +55,7 @@ class BackgroundContent extends StatelessWidget {
               urlPhoto: 'assets/img/continents.png',
               onPressed: () {
                 Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Navegando Continentes"),
+                  content: Text("No Disponible en tu Suscripción"),
                 ));
               },
             ),

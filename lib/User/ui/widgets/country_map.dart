@@ -37,7 +37,7 @@ class _CountryMapState extends State<CountryMap> {
           children: [
             GoogleMap(
               initialCameraPosition: _cameraPosition(),
-              myLocationButtonEnabled: false,
+              myLocationButtonEnabled: true,
               myLocationEnabled: false,
               onMapCreated: (controller) {
                 _mapController = controller;
