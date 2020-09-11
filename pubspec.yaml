@@ -92,6 +92,8 @@ flutter:
     - assets/img/
     - assets/country/
     - assets/map.jpg
+    - images/
+    - assets/
 
   fonts:
     - family: Lato

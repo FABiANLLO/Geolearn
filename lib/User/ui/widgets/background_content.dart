@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:geolearn/Test/home.dart';
+import 'package:geolearn/Test/quizpage.dart';
 import 'package:geolearn/Thematic/ui/widgets/ar_flutter.dart';
 import 'package:geolearn/Thematic/ui/widgets/explore.dart';
 
@@ -35,8 +37,11 @@ class BackgroundContent extends StatelessWidget {
               description: 'Test de preguntas',
               urlPhoto: 'assets/img/country.png',
               onPressed: () {
-                Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Navegando Paises"),
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  // in changelog 1 we will pass the langname name to ther other widget class
+                  // this name will be used to open a particular JSON file
+                  // for a particular language
+                  builder: (context) => getjson("Countries"),
                 ));
               },
             ),

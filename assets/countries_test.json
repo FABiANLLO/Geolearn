@@ -1,0 +1,87 @@
+[{
+        "1": "¿Característica principal de Chile?",
+        "2": "¿Capital famosa por su centro colonial español?",
+        "3": "¿País cuya capital es la ciudad de Sucre?",
+        "4": "¿Este país se encuentra entre Argentina, Brasil y Bolivia? ",
+        "5": "¿El petróleo es su mayor fuente de ingresos?",
+        "6": "¿Quién creó la bandera de Argentina?",
+        "7": "¿En qué País el futbol es el deporte más popular?",
+        "8": "¿Cuál es el segundo país más megadiverso del mundo?",
+        "9": "¿País que posee la gastronomía más variada del mundo?",
+        "10": "¿País cuya población en su mayoría es de ascendencia europea?"
+    },
+    {
+        "1": {
+            "a": "Rico en petróleo",
+            "b": "Diversa Gatronomía",
+            "c": "País largo y angosto",
+            "d": "Salida al Oceano Atlantico"
+        },
+        "2": {
+            "a": "Lima",
+            "b": "Quito",
+            "c": "Bogotá",
+            "d": "Santiago"
+        },
+        "3": {
+            "a": "Colombia",
+            "b": "Bolivia",
+            "c": "Venezuela",
+            "d": "Ecuador"
+        },
+        "4": {
+            "a": "Paraguay",
+            "b": "Uruguay",
+            "c": "Chile",
+            "d": "Ecuador"
+        },
+        "5": {
+            "a": "Argentina",
+            "b": "Chile",
+            "c": "Brasil",
+            "d": "Venezuela"
+        },
+        "6": {
+            "a": "Manuel Belgrano",
+            "b": "Antonio Rua",
+            "c": "Miguel Benitez",
+            "d": "Simon Bolivar"
+        },
+        "7": {
+            "a": "Colombia",
+            "b": "Argentina",
+            "c": "Brasil",
+            "d": "Uruguay"
+        },
+        "8": {
+            "a": "Perú",
+            "b": "Chile",
+            "c": "Colombia",
+            "d": "Ecuador"
+        },
+        "9": {
+            "a": "Colombia",
+            "b": "Perú",
+            "c": "Brasil",
+            "d": "Uruguay"
+        },
+        "10": {
+            "a": "Uruguay",
+            "b": "Chile",
+            "c": "Paraguay",
+            "d": "Argentina"
+        }
+    },
+    {
+        "1": "País largo y angosto",
+        "2": "Quito",
+        "3": "Bolivia",
+        "4": "Paraguay",
+        "5": "Venezuela",
+        "6": "Manuel Belgrano",
+        "7": "Brasil",
+        "8": "Colombia",
+        "9": "Perú",
+        "10": "Uruguay"
+    }
+]
