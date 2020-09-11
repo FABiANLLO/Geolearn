@@ -42,6 +42,12 @@ class AppbarGradient extends StatelessWidget {
                 color: Colors.white,
                 fontSize: 30.0,
                 fontFamily: "Lato",
+                shadows: <Shadow>[
+                  Shadow(
+                      offset: Offset(1.0, 1.0),
+                      blurRadius: 15.0,
+                      color: Colors.grey)
+                ],
                 fontWeight: FontWeight.bold),
           ),
           alignment: Alignment(-1.15, -0.74),

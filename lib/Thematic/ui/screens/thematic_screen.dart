@@ -35,7 +35,7 @@ class _ThemathicScreenState extends State<ThemathicScreen> {
                 icon: Icon(
                   Icons.keyboard_arrow_left,
                   color: Colors.white,
-                  size: 45.0,
+                  size: 30.0,
                 ),
                 onPressed: () {
                   Navigator.pop(context);

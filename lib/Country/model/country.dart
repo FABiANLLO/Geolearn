@@ -21,6 +21,7 @@ class Country {
       this.subregion,
       this.population,
       this.flag,
+      this.flagPath,
       this.latlng,
       this.cioc,
       this.coor});
@@ -34,6 +35,7 @@ class Country {
   String subregion;
   int population;
   String flag;
+  String flagPath;
   List<double> latlng;
   String cioc;
   GeoPoint coor;
@@ -48,6 +50,7 @@ class Country {
         subregion: json["subregion"],
         population: json["population"],
         flag: json["flag"],
+        flagPath: json["flag_path"],
         latlng: List<double>.from(json["latlng"].map((x) => x)),
         cioc: json["cioc"],
         coor: json["lat_lng"],
@@ -63,6 +66,7 @@ class Country {
         "subregion": subregion,
         "population": population,
         "flag": flag,
+        "flag_path": flagPath,
         "latlng": List<dynamic>.from(latlng.map((x) => x)),
         "cioc": cioc,
         "lat_lng": coor,

@@ -49,4 +49,15 @@ class CloudFirestoreAPI {
     }
     return countries;
   }
+
+  Stream<List<Country>> fetchAllCountries() {
+    final countries = _db
+        .collection('countries')
+        .orderBy('alpha2Code', descending: false)
+        .snapshots()
+        .map((querySnapshot) => querySnapshot.documents
+            .map((documentSnapshot) => Country.fromJson(documentSnapshot.data))
+            .toList());
+    return countries;
+  }
 }

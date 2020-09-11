@@ -62,7 +62,7 @@ class DescriptionThematic extends StatelessWidget {
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[title_stars, description, description, description],
+      children: <Widget>[title_stars, description],
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:geolearn/User/bloc/bloc_user.dart';
+import 'package:geolearn/User/ui/screens/themathic_list.dart';
 import 'package:geolearn/User/ui/screens/thematic_screen.dart';
 import 'package:geolearn/Thematic/ui/widgets/explore.dart';
 
@@ -41,7 +42,7 @@ class BackgroundContentExplore extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => ThemathicScreen()));
+                        builder: (BuildContext context) => ThemathicList()));
               },
             ),
             Explore(
