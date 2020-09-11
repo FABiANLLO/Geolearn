@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geolearn/Thematic/ui/widgets/ar_flutter.dart';
 import 'package:geolearn/Thematic/ui/widgets/explore.dart';
 
 class BackgroundContent extends StatelessWidget {
@@ -64,9 +65,10 @@ class BackgroundContent extends StatelessWidget {
               description: 'Conoce las Maravillas',
               urlPhoto: 'assets/img/ar.png',
               onPressed: () {
-                Scaffold.of(context).showSnackBar(SnackBar(
-                  content: Text("Realidad Aumentada"),
-                ));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => ArFlutter()));
               },
             ),
           ],

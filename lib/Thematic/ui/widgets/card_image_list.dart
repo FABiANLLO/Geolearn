@@ -14,10 +14,6 @@ class CardImageList extends StatelessWidget {
           CardImage("assets/img/5.jpg"),
           CardImage("assets/img/6.jpg"),
           CardImage("assets/img/7.jpg"),
-          CardImage("assets/img/8.jpg"),
-          CardImage("assets/img/9.jpg"),
-          CardImage("assets/img/10.jpg"),
-          CardImage("assets/img/11.jpg")
         ],
       ),
     );
