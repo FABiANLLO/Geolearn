@@ -1,6 +1,6 @@
 class Constant {
   static const imagePrefix = 'https://cdn.countryflags.com/thumbs';
-
+  static const imageCarrousel = 'assets/country/';
   static const String countryCodeUrl =
       'https://restcountries.eu/rest/v2/alpha/{code}';
   static const movieUrl =

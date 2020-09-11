@@ -90,6 +90,7 @@ flutter:
     - assets/img/3.jpg
     - assets/img/logo.png
     - assets/img/
+    - assets/country/
     - assets/map.jpg
 
   fonts:
